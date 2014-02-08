@@ -1,14 +1,15 @@
-<div class="span8 alec layered-paper">
-	
+<div class="span4 offset1 alec layered-paper">
+		<br /> 
 	<h1> 
-	What up? 
+	What up?
 		<%= simple_form_for @pic do |f| %>
-			<%= f.input :hour %>
-			<%= f.input :emotion %>
-			<%= f.input :learned %>
-			<%= f.submit "Post" %>
+		<br /> 
+			<%= f.input :hour, label: 'Which hour was this?' %>
+			<%= f.input :emotion, label: 'What were you feeling?',placeholder: 'Pondering' %>
+			<%= f.input :learned, label: 'What did you overcome?',placeholder: 'Who let the dogs out.' %>
+		<br/>
+			<%= f.submit :class=> 'Post'  'btn btn-info btn-large' %>
 		<% end %>
-
 	</h1>
 
 </div>
